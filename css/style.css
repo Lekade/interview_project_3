@@ -1,0 +1,36 @@
+*,
+:before,
+:after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+html {
+  font-size: 0.5208333333vw;
+}
+
+@media (max-width: 1024px) {
+  html {
+    font-size: 0.5747126437vw;
+  }
+}
+body {
+  font-family: "Manrope", sans-serif;
+  font-style: normal;
+  color: #2A2A2A;
+}
+
+.wrapper {
+  width: 100%;
+  overflow: hidden;
+}
