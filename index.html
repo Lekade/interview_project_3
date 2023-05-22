@@ -5,6 +5,9 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>LoremIpsum</title>
 	<link rel="stylesheet" href="css/style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Raleway:wght@800&display=swap" rel="stylesheet">
 </head>
 <body>
 	<div class="wrapper">
@@ -26,8 +29,7 @@
 				<div class="container">
 					<div class="intro__body">
 
-						<h1 class="intro__title">Lorem ipsum dolor sit amet
-						consectetur adipiscing
+						<h1 class="intro__title"><span class="intro__title_blue">Lorem ipsum</span> dolor sit ametconsectetur <span class="intro__title_blue">adipiscing</span>
 						</h1>
 						<div class="intro__text">
 							<span class="intro__text-top">At vero eos et accusamus et iusto odio dignissimos ducimus!</span>
@@ -37,15 +39,17 @@
 								<li class="intro__list-itom">Sed ut perspiciatis, unde omnis iste natus error</li>
 							</ul>
 						</div>
-						<button class="btn">заказать</button>
-						<a class="btn-link" href="#">подробнее</a>
+						<div class="intro__btns">
+							<button class="btn intro__btn">заказать</button>
+							<a class="btn-link" href="#">подробнее</a>
+						</div>
 					</div>
 				</div>
 			</section>
 			<section class="form">
 				<div class="container">
-					<h2 class="form__title">Оформление  Заказа</h2>
-					<p class="form__text"></p>
+					<h2 class="form__title">Оформление <span class="form__title-blue"> Заказа</span></h2>
+					<p class="form__text">Перед заполнением формы ознакомьтесь с нашей схемой работы!</p>
 					<div class="form__row-info">
 						<div class="form__column">
 							<img src="img/search-itom.svg" alt="search" class="form__column-icon">
@@ -70,23 +74,58 @@
 							<p class="form__column-text">Excepteur sint occaecat cupidatat non proident</p>
 						</div>
 					</div>
-					<form class="form__body">
+					<form  class="form__body">
 
-						<select class="form__select">
-							<option value="">Sed ut perspiciatis</option>
-							<option value="">Nemo enim ipsam</option>
-							<option value="">Et harum quidem</option>
-							<option value="">Temporibus autem</option>
-							<option value="">Itaque earum rerum</option>
-						</select>
+						<div class="form__select">
+							<div class="select-title">
+								<div class="select-title__text">Выберите тип системы</div>
+								<svg class="select-title__img" width="9" height="6" viewBox="0 0 9 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M8.93375 1.51079C8.93375 1.43936 8.89803 1.359 8.84446 1.30543L8.39803 0.859C8.34446 0.805429 8.2641 0.769714 8.19268 0.769714C8.12125 0.769714 8.04089 0.805429 7.98732 0.859L4.47839 4.36793L0.969462 0.859C0.91589 0.805429 0.835533 0.769714 0.764105 0.769714C0.683748 0.769714 0.612319 0.805429 0.558748 0.859L0.112319 1.30543C0.0587475 1.359 0.0230331 1.43936 0.0230331 1.51079C0.0230331 1.58221 0.0587475 1.66257 0.112319 1.71614L4.27303 5.87686C4.3266 5.93043 4.40696 5.96614 4.47839 5.96614C4.54982 5.96614 4.63018 5.93043 4.68375 5.87686L8.84446 1.71614C8.89803 1.66257 8.93375 1.58221 8.93375 1.51079Z" fill="black"/>
+								</svg>
+							</div>
+							<div class="form__options">
+								<label for="Opt1" class="select-option">
+									<input id="Opt1" type="radio" name="select-option" value="Sed ut perspiciatis"/>
+									<p>Sed ut perspiciatis</p>
+								</label>
+								<label for="Opt2" class="select-option">
+									<input id="Opt2" type="radio" name="select-option" value="Nemo enim ipsam"/>
+									<p>Nemo enim ipsam</p>
+								</label>
+								<label for="Opt3" class="select-option">
+									<input id="Opt3" type="radio" name="select-option" value="Et harum quidem"/>
+									<p>Et harum quidem</p>
+								</label>
+								<label for="Opt4" class="select-option">
+									<input id="Opt4" type="radio" name="select-option" value="Temporibus autem"/>
+									<p>Temporibus autem</p>
+								</label>
+								<label for="Opt5" class="select-option">
+									<input id="Opt5" type="radio" name="select-option" value="Itaque earum rerum"/>
+									<p>Itaque earum rerum</p>
+								</label>
+								<label for="Opt6" class="select-option">
+									<input id="Opt6" type="radio" name="select-option" value="Autem enim quidem"/>
+									<p>Autem enim quidem</p>
+								</label>
+							</div>
+						</div>
 
-						<input type="emaill" class="form__emaill">
+						<input type="emaill" class="form__emaill" placeholder="Ваш e-mail">
 
-						<input type="text" class="form__name">
+						<input type="text" class="form__name" placeholder="Ваше имя">
 
-						<input type="range" min="0" max="100" step="1" value="50"> 
+						<div class="form__range">
+							<p class="form__range-title">Sed ut perspiciatis, unde omnis iste natus</p>
+							<span class="form__range-perсent">75</span><span>%</span>
+							<input type="range" min="0" max="100" step="1" value="75" class="form__input-range" oninput="addValueRange(this.value)">
+						</div>
 
-						<input type="file" class="form__file">
+						<label for="addFile" class="form__file">
+							<img src="./img/btn-file.svg" alt="btn-file">
+							<span>Прикрепить файл</span>
+							<input type="file" class="form__input-file" id="addFile">
+						</label>
 
 						<button class="btn form__btn">Отправить</button>
 					</form>
@@ -95,35 +134,36 @@
 		</main>
 		<footer class="footer">
 			<div class="container">
-				<div class="footer__copyright">
-				© 2018 «LoremIpsum.net» Все права защищены.</div>
+				<div class="footer__block footer__copyright">
+				© 2018 «LoremIpsum.net» Все права защищены.
+				</div>
+				<div class="footer__block footer__wallet-items">
+					<div class="footer__wallet-item">
+						<img src="img/qiwi.svg" alt="qiwi">
+						<p>Qiwi wallet</p>
+					</div>
+					<div class="footer__wallet-item">
+						<img src="img/yandex_money.svg" alt="yandex-m">
+						<p>Yandex Money</p>
+					</div>
+					<div class="footer__wallet-item">
+						<img src="img/web_money.svg" alt="web-m">
+						<p>Web Money</p>
+					</div>
+				</div>
+				<div class="footer__block footer__links">
+					<div class="footer__link">
+						<img src="img/mail.svg" alt="mail">
+						<a href="mailto:info@ipsum228.com">info@ipsum228.com</a>
+					</div>
+					<div class="footer__link">
+						<img src="img/vk.svg" alt="vk">
+						<a href="https://vk.com">Мы вконтакте</a>
+					</div>
+				</div>
 			</div>
-			<div class="footer__payment-systems">
-				<div class="footer__qiwi-wallet">
-					<img src="img/qiwi.svg" alt="qiwi">
-					<p>Qiwi wallet</p>
-				</div>
-				<div class="footer__yandex-money">
-					<img src="img/yandex_money.svg" alt="yandex-m">
-					<p>Yandex Money</p>
-				</div>
-				<div class="footer__web-money">
-					<img src="img/web_money.svg" alt="web-m">
-				</div>
-			</div>
-			<div class="footer__contacts">
-				<div class="footer__mail">
-					<img src="img/mail.svg" alt="mail">
-					<a href="mailto:info@ipsum228.com">info@ipsum228.com</a>
-				</div>
-				<div class="footer__vk">
-					<img src="img/vk.svg" alt="vk">
-					<a href="https://vk.com">Мы вконтакте</a>
-				</div>
-			</div>
-
 		</footer>
 	</div>
-	<script src="js/app.js"></script>
+	<script src="./js/app.js"></script>
 </body>
 </html>
