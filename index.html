@@ -22,6 +22,9 @@
 						<li class="menu__llist-itom"><a href="#" class="menu__link">Оформить заказ</a></li>
 					</ul>
 				</nav>
+				<div class="burger">
+					<span></span>
+				</div>
 			</div>
 		</header>
 		<main class="main">
@@ -85,46 +88,46 @@
 							</div>
 							<div class="form__options">
 								<label for="Opt1" class="select-option">
-									<input id="Opt1" type="radio" name="select-option" value="Sed ut perspiciatis"/>
+									<input id="Opt1" type="radio" name="system" value="Sed ut perspiciatis"/>
 									<p>Sed ut perspiciatis</p>
 								</label>
 								<label for="Opt2" class="select-option">
-									<input id="Opt2" type="radio" name="select-option" value="Nemo enim ipsam"/>
+									<input id="Opt2" type="radio" name="system" value="Nemo enim ipsam"/>
 									<p>Nemo enim ipsam</p>
 								</label>
 								<label for="Opt3" class="select-option">
-									<input id="Opt3" type="radio" name="select-option" value="Et harum quidem"/>
+									<input id="Opt3" type="radio" name="system" value="Et harum quidem"/>
 									<p>Et harum quidem</p>
 								</label>
 								<label for="Opt4" class="select-option">
-									<input id="Opt4" type="radio" name="select-option" value="Temporibus autem"/>
+									<input id="Opt4" type="radio" name="system" value="Temporibus autem"/>
 									<p>Temporibus autem</p>
 								</label>
 								<label for="Opt5" class="select-option">
-									<input id="Opt5" type="radio" name="select-option" value="Itaque earum rerum"/>
+									<input id="Opt5" type="radio" name="system" value="Itaque earum rerum"/>
 									<p>Itaque earum rerum</p>
 								</label>
 								<label for="Opt6" class="select-option">
-									<input id="Opt6" type="radio" name="select-option" value="Autem enim quidem"/>
+									<input id="Opt6" type="radio" name="system" value="Autem enim quidem"/>
 									<p>Autem enim quidem</p>
 								</label>
 							</div>
 						</div>
 
-						<input type="emaill" class="form__emaill" placeholder="Ваш e-mail">
+						<input name="email" type="emaill" class="form__emaill" placeholder="Ваш e-mail">
 
-						<input type="text" class="form__name" placeholder="Ваше имя">
+						<input name="name" type="text" class="form__name" placeholder="Ваше имя">
 
 						<div class="form__range">
 							<p class="form__range-title">Sed ut perspiciatis, unde omnis iste natus</p>
 							<span class="form__range-perсent">75</span><span>%</span>
-							<input type="range" min="0" max="100" step="1" value="75" class="form__input-range" oninput="addValueRange(this.value)">
+							<input name="perspiciatis" type="range" min="0" max="100" step="1" value="75" class="form__input-range" oninput="addValueRange(this.value)">
 						</div>
 
 						<label for="addFile" class="form__file">
 							<img src="./img/btn-file.svg" alt="btn-file">
 							<span>Прикрепить файл</span>
-							<input type="file" class="form__input-file" id="addFile">
+							<input name="file" type="file" class="form__input-file" id="addFile">
 						</label>
 
 						<button class="btn form__btn">Отправить</button>

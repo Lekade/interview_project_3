@@ -5,11 +5,7 @@ const  selectOption = document.querySelectorAll(".select-option")
 
 
 selectTitle.addEventListener('click', () => {
-    if(!formSelect.classList.contains("active")){
-        return  formSelect.classList.add("active")
-    } else{
-        return  formSelect.classList.remove("active")
-    }
+    formSelect.classList.toggle('active');
 })
 
 document.addEventListener('click', e => {
@@ -41,6 +37,12 @@ const formRangePercent = document.querySelector(".form__range-perсent")
 const addValueRange = (e) => {
     formRangePercent.innerHTML = e
 }
+/*------------------------------------------Burger-----------------------------------------------*/
 
+const burger = document.querySelector('.burger')
 
+burger.addEventListener('click', () => {
+    burger.classList.toggle('active');
+    document.querySelector('.menu').classList.toggle('open');
+})
 
