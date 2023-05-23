@@ -386,7 +386,7 @@ html{
     display: none;
   }
   @media(max-width:768px){
-    width: 15rem;
+    width: 14rem;
     min-height: 10.5rem;
     margin-bottom: 1rem;
     &:after{
@@ -439,7 +439,7 @@ html{
   @media(max-width:768px){
     margin-top: 4rem;
     margin-bottom: 6rem;
-    grid-template-columns: 30rem;
+    grid-template-columns: 29rem;
     grid-template-rows: repeat(6, 4.8rem);
   }
 }
@@ -519,6 +519,7 @@ html{
   input{
     width: 0.001rem;
     height: 0.001rem;
+    opacity: 0;
   }
   p {
     padding: 0 1rem;
@@ -602,6 +603,7 @@ html{
       background-repeat: no-repeat;
       background-position: 100% 100%;
       background-size: 2.372rem 2.372rem;
+      border-radius:50%;
     }
     &::-ms-thumb{
       appearance: none;
@@ -646,7 +648,7 @@ label.form__file {
   font-size: 1.5rem;
   line-height: 1.8rem;
   @media(max-width:768px){
-    width: 30rem;
+    width: 29rem;
     grid-column-start: 1;
     grid-column-end: 2;
   }
