@@ -489,6 +489,7 @@ html{
   border: .1rem solid #3D4050;
   overflow: auto;
   z-index: 2;
+  scrollbar-color: #3E9CDC #3D4050;
   &::-webkit-scrollbar{
     width: .7rem;
     right:-100px;
@@ -571,7 +572,7 @@ html{
     }
     @media(max-width:768px){
       grid-column-end: 2;
-      font-size: 1.45rem;
+      font-size: 1.4rem;
       &-title{
         width: auto;
       }
@@ -599,11 +600,12 @@ html{
       appearance: none;
       width: 2.372rem;
       height: 2.372rem;
-      background-image: url("../img/rang-thumb.svg");
+      background: transparent url("../img/rang-thumb.svg");
       background-repeat: no-repeat;
       background-position: 100% 100%;
       background-size: 2.372rem 2.372rem;
       border-radius:50%;
+      border:none;
     }
     &::-ms-thumb{
       appearance: none;

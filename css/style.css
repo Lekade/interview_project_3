@@ -678,6 +678,7 @@ body {
   border: 0.1rem solid #3D4050;
   overflow: auto;
   z-index: 2;
+  scrollbar-color: #3E9CDC #3D4050;
 }
 .form__options::-webkit-scrollbar {
   width: 0.7rem;
@@ -788,7 +789,7 @@ body {
   .form__range {
     -ms-grid-column-span: 2;
     grid-column-end: 2;
-    font-size: 1.45rem;
+    font-size: 1.4rem;
   }
   .form__range-title {
     width: auto;
@@ -822,11 +823,12 @@ input.form__input-range[type=range]::-moz-range-thumb {
        appearance: none;
   width: 2.372rem;
   height: 2.372rem;
-  background-image: url("../img/rang-thumb.svg");
+  background: transparent url("../img/rang-thumb.svg");
   background-repeat: no-repeat;
   background-position: 100% 100%;
   background-size: 2.372rem 2.372rem;
   border-radius: 50%;
+  border: none;
 }
 input.form__input-range[type=range]::-ms-thumb {
   appearance: none;
